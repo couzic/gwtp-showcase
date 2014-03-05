@@ -1,0 +1,24 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:with field='res'
+		type='com.github.micouz.gwtp.showcase.client.resource.Resources' />
+
+	<g:DockLayoutPanel unit="PX">
+		<g:north size="50">
+			<g:SimpleLayoutPanel ui:field="headerSlot" />
+		</g:north>
+		<g:south size="40">
+			<g:Label styleName="{res.style.footer}">Footer</g:Label>
+		</g:south>
+		<g:center>
+			<g:SimpleLayoutPanel ui:field="contentSlot" />
+		</g:center>
+	</g:DockLayoutPanel>
+	
+</ui:UiBinder>

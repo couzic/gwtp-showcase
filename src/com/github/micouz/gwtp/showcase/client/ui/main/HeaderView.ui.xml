@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<!-- References the NameTokens class so that we can call its static methods -->
+	<ui:with type="com.github.micouz.gwtp.showcase.client.place.NameTokens" field="token"></ui:with>
+
+	<b:Navbar>
+		<b:Brand ui:field="title" href="#">GWTP Example</b:Brand>
+		<b:Nav>
+			<b:NavLink href="#{token.home}">Home</b:NavLink>
+			<b:NavLink href="#">Samples</b:NavLink>
+			<b:NavLink href="#">Concept List</b:NavLink>
+		</b:Nav>
+		<b:NavSearch ui:field="searchBox" alignment="RIGHT" size="3" placeholder="Search" />
+	</b:Navbar>
+
+</ui:UiBinder>
