@@ -11,8 +11,8 @@ import com.github.micouz.gwtp.showcase.client.place.DefaultPlace;
 import com.github.micouz.gwtp.showcase.client.place.NameTokens;
 import com.github.micouz.gwtp.showcase.client.ui.main.HeaderPresenter;
 import com.github.micouz.gwtp.showcase.client.ui.main.HeaderView;
-import com.github.micouz.gwtp.showcase.client.ui.SearchResultPresenter;
-import com.github.micouz.gwtp.showcase.client.ui.SearchResultView;
+import com.github.micouz.gwtp.showcase.client.ui.search.SearchResultPresenter;
+import com.github.micouz.gwtp.showcase.client.ui.search.SearchResultView;
 
 public class ClientModule extends AbstractPresenterModule {
 

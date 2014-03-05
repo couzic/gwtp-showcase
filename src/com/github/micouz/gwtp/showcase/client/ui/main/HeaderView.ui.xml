@@ -7,16 +7,21 @@
 	ui:generateLocales='default'>
 
 	<!-- References the NameTokens class so that we can call its static methods -->
-	<ui:with type="com.github.micouz.gwtp.showcase.client.place.NameTokens" field="token"></ui:with>
+	<ui:with type="com.github.micouz.gwtp.showcase.client.place.NameTokens"
+		field="token"></ui:with>
+
+	<ui:with field='msg'
+		type='com.github.micouz.gwtp.showcase.client.i18n.Messages' />
 
 	<b:Navbar>
-		<b:Brand ui:field="title" href="#">GWTP Example</b:Brand>
+		<b:Brand ui:field="title" href="#" text="{msg.gwtpShowcase}" />
 		<b:Nav>
-			<b:NavLink href="#{token.home}">Home</b:NavLink>
+			<b:NavLink href="#{token.home}" text="{msg.home}" />
 			<b:NavLink href="#">Samples</b:NavLink>
 			<b:NavLink href="#">Concept List</b:NavLink>
 		</b:Nav>
-		<b:NavSearch ui:field="searchBox" alignment="RIGHT" size="3" placeholder="Search" />
+		<b:NavSearch ui:field="searchBox" alignment="RIGHT" size="3"
+			placeholder="{msg.search}" />
 	</b:Navbar>
 
 </ui:UiBinder>

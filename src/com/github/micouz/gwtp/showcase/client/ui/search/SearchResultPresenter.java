@@ -1,4 +1,4 @@
-package com.github.micouz.gwtp.showcase.client.ui;
+package com.github.micouz.gwtp.showcase.client.ui.search;
 
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;

@@ -9,7 +9,7 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.google.gwt.inject.client.AsyncProvider;
 import com.github.micouz.gwtp.showcase.client.ui.main.MainPresenter;
 import com.github.micouz.gwtp.showcase.client.ui.main.HomePresenter;
-import com.github.micouz.gwtp.showcase.client.ui.SearchResultPresenter;
+import com.github.micouz.gwtp.showcase.client.ui.search.SearchResultPresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {

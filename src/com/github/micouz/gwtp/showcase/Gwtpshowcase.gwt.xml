@@ -23,7 +23,7 @@
 	<inherits name='com.github.gwtbootstrap.Bootstrap' />
 
 	<!-- i18n -->
-	<extend-property name="locale" values="fr,en" />
+	<extend-property name="locale" values="fr" />
 
 	<!-- Specify the app entry point class. -->
 	<entry-point class='com.github.micouz.gwtp.showcase.client.Gwtpshowcase' />
