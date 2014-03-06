@@ -13,6 +13,18 @@ import com.github.micouz.gwtp.showcase.client.ui.main.HeaderPresenter;
 import com.github.micouz.gwtp.showcase.client.ui.main.HeaderView;
 import com.github.micouz.gwtp.showcase.client.ui.search.SearchResultPresenter;
 import com.github.micouz.gwtp.showcase.client.ui.search.SearchResultView;
+import com.github.micouz.gwtp.showcase.client.ui.sample.main.SampleHomePresenter;
+import com.github.micouz.gwtp.showcase.client.ui.sample.main.SampleHomeView;
+import com.github.micouz.gwtp.showcase.client.ui.sample.main.SampleListPresenter;
+import com.github.micouz.gwtp.showcase.client.ui.sample.main.SampleListView;
+import com.github.micouz.gwtp.showcase.client.ui.sample.main.SampleMainPresenter;
+import com.github.micouz.gwtp.showcase.client.ui.sample.main.SampleMainView;
+import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.EventBusSamplePresenter;
+import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.EventBusSampleView;
+import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.LeftWidgetPresenter;
+import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.LeftWidgetView;
+import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.RightWidgetPresenter;
+import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.RightWidgetView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -33,5 +45,26 @@ public class ClientModule extends AbstractPresenterModule {
 						SearchResultPresenter.MyView.class,
 						SearchResultView.class,
 						SearchResultPresenter.MyProxy.class);
+
+		bindPresenter(	SampleMainPresenter.class,
+						SampleMainPresenter.MyView.class,
+						SampleMainView.class,
+						SampleMainPresenter.MyProxy.class);
+
+		bindSingletonPresenterWidget(SampleListPresenter.class, SampleListPresenter.MyView.class, SampleListView.class);
+
+		bindPresenter(	SampleHomePresenter.class,
+						SampleHomePresenter.MyView.class,
+						SampleHomeView.class,
+						SampleHomePresenter.MyProxy.class);
+
+		bindPresenter(	EventBusSamplePresenter.class,
+						EventBusSamplePresenter.MyView.class,
+						EventBusSampleView.class,
+						EventBusSamplePresenter.MyProxy.class);
+
+		bindPresenterWidget(LeftWidgetPresenter.class, LeftWidgetPresenter.MyView.class, LeftWidgetView.class);
+
+		bindPresenterWidget(RightWidgetPresenter.class, RightWidgetPresenter.MyView.class, RightWidgetView.class);
 	}
 }

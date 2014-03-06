@@ -9,15 +9,13 @@
 	<ui:with field='r'
 		type='com.github.micouz.gwtp.showcase.client.resource.Resources' />
 
-	<g:DockLayoutPanel unit="PX">
-		<g:north size="50">
-			<g:SimpleLayoutPanel ui:field="headerSlot" />
-		</g:north>
-		<g:south size="40">
-			<g:Label styleName="{r.style.footer}">Footer</g:Label>
-		</g:south>
+	<g:DockLayoutPanel unit="EM">
+		<g:west size="20">
+			<g:SimpleLayoutPanel ui:field="listSlot" />
+		</g:west>
 		<g:center>
-			<g:SimpleLayoutPanel ui:field="contentSlot" />
+			<g:SimpleLayoutPanel ui:field="sampleSlot"
+				styleName="{r.style.marginLeft}" />
 		</g:center>
 	</g:DockLayoutPanel>
 	

@@ -1,0 +1,16 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<g:DockLayoutPanel unit="PCT">
+		<g:west size="50">
+			<g:SimpleLayoutPanel ui:field="leftSlot" />
+		</g:west>
+		<g:center>
+			<g:SimpleLayoutPanel ui:field="rightSlot" />
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder>

@@ -1,6 +1,5 @@
 package com.github.micouz.gwtp.showcase.client.ui.main;
 
-import com.github.micouz.gwtp.showcase.client.resource.Resources;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Panel;
@@ -26,7 +25,6 @@ public class MainView extends ViewImpl implements MainPresenter.MyView {
 	@Inject
 	public MainView(final Binder binder) {
 		widget = binder.createAndBindUi(this);
-		Resources.INSTANCE.style().ensureInjected();
 	}
 
 	@Override
