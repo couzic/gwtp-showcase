@@ -10,6 +10,9 @@ public interface Messages extends Constants {
 	@DefaultStringValue("Home")
 	String home();
 	
+	@DefaultStringValue("Samples")
+	String samples();
+	
 	@DefaultStringValue("Search")
 	String search();
 

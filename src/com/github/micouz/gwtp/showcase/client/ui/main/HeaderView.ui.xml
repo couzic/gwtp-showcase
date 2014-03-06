@@ -17,8 +17,7 @@
 		<b:Brand ui:field="title" href="#" text="{msg.gwtpShowcase}" />
 		<b:Nav>
 			<b:NavLink href="#{token.home}" text="{msg.home}" />
-			<b:NavLink href="#{token.sample}">Samples</b:NavLink>
-			<b:NavLink href="#">Concept List</b:NavLink>
+			<b:NavLink href="#{token.sample}" text="{msg.samples}" />
 		</b:Nav>
 		<b:NavSearch ui:field="searchBox" alignment="RIGHT" size="3"
 			placeholder="{msg.search}" />

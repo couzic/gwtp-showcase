@@ -13,6 +13,7 @@ import com.github.micouz.gwtp.showcase.client.ui.search.SearchResultPresenter;
 import com.github.micouz.gwtp.showcase.client.ui.sample.main.SampleHomePresenter;
 import com.github.micouz.gwtp.showcase.client.ui.sample.main.SampleMainPresenter;
 import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.EventBusSamplePresenter;
+import com.github.micouz.gwtp.showcase.client.ui.sample.editor.EditorSamplePresenter;
 
 @GinModules({ DispatchAsyncModule.class, ClientModule.class })
 public interface ClientGinjector extends Ginjector {
@@ -32,4 +33,6 @@ public interface ClientGinjector extends Ginjector {
 	AsyncProvider<SampleHomePresenter> getSampleHomePresenter();
 
 	AsyncProvider<EventBusSamplePresenter> getEventBusSamplePresenter();
+
+	AsyncProvider<EditorSamplePresenter> getEditorSamplePresenter();
 }

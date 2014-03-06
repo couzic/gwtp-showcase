@@ -6,6 +6,7 @@ public class NameTokens {
 	public static final String searchResult = "search-result";
 	public static final String sample = "sample";
 	public static final String eventBusSample = "sample-eventbus";
+	public static final String editorSample = "sample-editor";
 
 	public static String home() {
 		return home;
@@ -21,5 +22,9 @@ public class NameTokens {
 
 	public static String eventBusSample() {
 		return eventBusSample;
+	}
+
+	public static String editorSample() {
+		return editorSample;
 	}
 }

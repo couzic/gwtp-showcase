@@ -13,7 +13,7 @@
 		<b:NavHeader>Samples</b:NavHeader>
 		<b:Divider />
 		<b:NavLink href="#{token.eventBusSample}">Event Bus</b:NavLink>
-		<b:NavLink href="#editor">Editor</b:NavLink>
+		<b:NavLink href="#{token.editorSample}">Editor</b:NavLink>
 		<b:NavLink href="#rest">REST</b:NavLink>
 		<b:NavLink href="#autobean">AutoBean</b:NavLink>
 	</b:WellNavList>

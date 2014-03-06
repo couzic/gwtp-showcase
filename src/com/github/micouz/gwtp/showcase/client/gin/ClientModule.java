@@ -25,6 +25,8 @@ import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.LeftWidgetPrese
 import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.LeftWidgetView;
 import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.RightWidgetPresenter;
 import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.RightWidgetView;
+import com.github.micouz.gwtp.showcase.client.ui.sample.editor.EditorSamplePresenter;
+import com.github.micouz.gwtp.showcase.client.ui.sample.editor.EditorSampleView;
 
 public class ClientModule extends AbstractPresenterModule {
 
@@ -66,5 +68,10 @@ public class ClientModule extends AbstractPresenterModule {
 		bindPresenterWidget(LeftWidgetPresenter.class, LeftWidgetPresenter.MyView.class, LeftWidgetView.class);
 
 		bindPresenterWidget(RightWidgetPresenter.class, RightWidgetPresenter.MyView.class, RightWidgetView.class);
+
+		bindPresenter(	EditorSamplePresenter.class,
+						EditorSamplePresenter.MyView.class,
+						EditorSampleView.class,
+						EditorSamplePresenter.MyProxy.class);
 	}
 }
