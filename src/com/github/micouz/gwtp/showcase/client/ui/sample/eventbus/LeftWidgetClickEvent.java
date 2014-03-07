@@ -1,4 +1,4 @@
-package com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.event;
+package com.github.micouz.gwtp.showcase.client.ui.sample.eventbus;
 
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;

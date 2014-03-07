@@ -1,6 +1,5 @@
 package com.github.micouz.gwtp.showcase.client.ui.sample.eventbus;
 
-import com.github.micouz.gwtp.showcase.client.ui.sample.eventbus.event.LeftWidgetClickEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.HasClickHandlers;
