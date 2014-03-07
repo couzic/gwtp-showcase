@@ -18,6 +18,7 @@
 		<b:Nav>
 			<b:NavLink href="#{token.home}" text="{msg.home}" />
 			<b:NavLink href="#{token.sample}" text="{msg.samples}" />
+			<b:NavLink ui:field="french" text="Français" />
 		</b:Nav>
 		<b:NavSearch ui:field="searchBox" alignment="RIGHT" size="3"
 			placeholder="{msg.search}" />
